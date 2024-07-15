@@ -30,7 +30,7 @@ console.log(document.querySelector('ellipse').getTotalLength());
 
 const App = function() {
   return (
-    <body onclick="toggleFullscreen()">
+    <div id="root" onclick="toggleFullscreen()">
       <svg width="200" height="200">
         <g>
           <ellipse cx="100" cy="100" rx="160" ry="60" />
@@ -39,7 +39,7 @@ const App = function() {
           <circle cx="100" cy="100" r="30" />
          </g>
       </svg>
-    </body>
+    </div>
   );
 };
 
