@@ -26,13 +26,13 @@ function toggleFullscreen() {
   };
 };
 
-console.log(document.querySelector('ellipse').getTotalLength());
+console.log(document.querySelector('#ellipse').getTotalLength());
 
 const App = function() {
   return (
     <div id="root" onclick="toggleFullscreen()">
       <svg width="200" height="200">
-        <g>
+        <g id="#ellipse">
           <ellipse cx="100" cy="100" rx="160" ry="60" />
           <ellipse cx="100" cy="100" rx="160" ry="60" transform="rotate(60, 100, 100)" />
           <ellipse cx="100" cy="100" rx="160" ry="60" transform="rotate(120, 100, 100)" />
