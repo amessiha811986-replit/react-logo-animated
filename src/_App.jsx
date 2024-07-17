@@ -60,6 +60,7 @@ const App = function() {
             cx="100" 
             cy="100" 
             r="30" 
+            id="#ellipse"
           />
          </g>
       </svg>
